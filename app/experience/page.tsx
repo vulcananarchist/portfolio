@@ -1,6 +1,6 @@
 import PageWrap from '@/components/PageWrap'
 
-export const metadata = { title: 'Experience — VK' }
+export const metadata = { title: 'Experience VK' }
 
 export default function Experience() {
   return (
@@ -57,15 +57,15 @@ export default function Experience() {
         <div>
           <div className="award-item">
             <span className="text-acc flex-shrink-0 mt-[0.15rem]">◆</span>
-            <span>Winner, MIT AI Hackathon — AI Dementia Detection tool (1,000+ teams)</span>
+            <span>Winner, MIT AI Hackathon AI Dementia Detection tool (1,000+ teams)</span>
           </div>
           <div className="award-item">
             <span className="text-acc flex-shrink-0 mt-[0.15rem]">◆</span>
-            <span>Inventor &amp; Applicant — Indian Patent: Machine Learning-Based Produce Preservation System (Docket No. 2216901-NS)</span>
+            <span>Inventor &amp; Applicant Indian Patent: Machine Learning-Based Produce Preservation System (Docket No. 2216901-NS)</span>
           </div>
           <div className="award-item">
             <span className="text-acc flex-shrink-0 mt-[0.15rem]">◆</span>
-            <span>Winner, Rajasthan Hackathon — Computer Vision Pest Detection in Stored Grains (15,000+ teams)</span>
+            <span>Winner, Rajasthan Hackathon Computer Vision Pest Detection in Stored Grains (15,000+ teams)</span>
           </div>
         </div>
       </section>
@@ -76,7 +76,7 @@ export default function Experience() {
           <div className="tl-item">
             <div>
               <div className="tl-org">Harvard University · Boston, MA</div>
-              <div className="tl-role">Master's in Design Engineering — GPA 3.9/4</div>
+              <div className="tl-role">Master's in Design Engineering GPA 3.9/4</div>
               <div className="tl-desc">
                 Joint degree: SEAS + GSD. Focus on HCI, Natural Language Systems, User-Centered AI Design.
                 Tech Panel Lead, HarvardxDesign Conference.
@@ -86,7 +86,7 @@ export default function Experience() {
           <div className="tl-item">
             <div>
               <div className="tl-org">M.S. Ramaiah Institute of Technology · India</div>
-              <div className="tl-role">B.E. Electronics &amp; Instrumentation — GPA 8.28/10</div>
+              <div className="tl-role">B.E. Electronics &amp; Instrumentation GPA 8.28/10</div>
               <div className="tl-desc">Focus: Robotics &amp; AI. Best Capstone Project Award.</div>
             </div>
           </div>
