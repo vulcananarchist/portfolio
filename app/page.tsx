@@ -25,17 +25,16 @@ export default function Home() {
 
       <div className="space-y-[0.9rem] mb-[1.3rem]">
         <p className="body-p">
-          Deeply technical AI product builder specializing in{' '}
-          <strong>conversational AI and prompt engineering</strong>, with 4+ years shipping
-          0-to-1 consumer products. I work at the intersection of engineering depth and
-          human-centred design fluent in both model evaluation frameworks and user research.
+          I'm an AI product manager and engineer with 4+ years building 0-to-1 products
+          at the intersection of healthcare and technology. I've founded a healthcare AI
+          company, led AI product teams at Harvard and early-stage startups, and I specialise
+          in conversational AI, prompt engineering, and getting research-grade ideas into
+          the hands of real users.
         </p>
         <p className="body-p">
-          Harvard Design Engineer (SEAS + GSD). I've founded a healthcare AI company.
-        </p>
-        <p className="body-p">
-          Right now I'm focused on AI in healthcare where the stakes are high, the problems
-          are real, and good product thinking genuinely matters.
+          Harvard Design Engineer (SEAS + GSD). I care about products where the stakes
+          are real — where good thinking and careful execution actually change outcomes
+          for people.
         </p>
       </div>
 
