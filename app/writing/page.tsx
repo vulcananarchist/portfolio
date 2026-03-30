@@ -35,11 +35,11 @@ export default function Writing() {
             the intersection of AI and healthcare.
           </p>
           <a
-            href="https://healthtechactually.substack.com/"
+            href="https://substack.com/@healthtechactually?utm_source=user-menu"
             target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[0.8rem] bg-tx text-bg no-underline px-[1.1rem] py-[0.5rem] rounded-sm font-medium mt-4 hover:opacity-85 transition-opacity"
           >
-            Read on Substack ↗
+            Healthtech, actually ↗
           </a>
         </div>
 
