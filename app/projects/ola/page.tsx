@@ -1,11 +1,10 @@
-import PageWrap from '@/components/PageWrap'
 import { Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
 export const metadata = { title: 'Ola! VK' }
 
 export default function Ola() {
   return (
-    <PageWrap>
+    <div>
       <h1 className="text-[1.3rem] font-medium leading-[1.25] mb-[0.3rem]">Ola!</h1>
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
         Voice AI · Women's Health · Cognitive Screening · MIT AI Hackathon Winner
@@ -60,6 +59,6 @@ export default function Ola() {
       </Blk>
 
       <ProjNav next="CerebroCare" nextHref="/projects/cerebrocare" />
-    </PageWrap>
+    </div>
   )
 }
