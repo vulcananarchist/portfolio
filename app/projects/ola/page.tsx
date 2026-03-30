@@ -1,7 +1,7 @@
 import PageWrap from '@/components/PageWrap'
 import { Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Ola! — VK' }
+export const metadata = { title: 'Ola! VK' }
 
 export default function Ola() {
   return (
@@ -28,12 +28,12 @@ export default function Ola() {
         ["Passive","no clinic, no wearable"],
       ]} />
 
-      <Insight text="The best health screening tool is one that doesn't feel like a health screening tool — it just works in the background of a life that's already full." />
+      <Insight text="The best health screening tool is one that doesn't feel like a health screening tool it just works in the background of a life that's already full." />
 
       <Blk label="The solution">
         <p>
-          Ola! passively analyzes speech biomarkers during everyday phone calls — pitch, tempo,
-          pauses, filler words, hesitations, vocal tone — to detect early cognitive drift. No
+          Ola! passively analyzes speech biomarkers during everyday phone calls pitch, tempo,
+          pauses, filler words, hesitations, vocal tone to detect early cognitive drift. No
           active test. Just a call you were already going to make.
         </p>
         <p>
@@ -54,7 +54,7 @@ export default function Ola() {
         <p>
           Freemium B2C at $9.99/mo. B2B licensing to memory clinics ($5K to $15K/year), employer
           wellness ($50 to $100/employee), SDK/API for digital health platforms ($25K/year + usage).
-          The B2B channel is the strategic priority — employers already have distribution to exactly
+          The B2B channel is the strategic priority employers already have distribution to exactly
           this demographic.
         </p>
       </Blk>
