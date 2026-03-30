@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Clash Display';
-  font-weight: 300;
-  src: url('https://files.peachworlds.com/website/b081bca2-b3ee-4873-8492-fbb5d261d24c/clashdisplay-light.woff') format('woff');
-}
-@font-face {
-  font-family: 'Clash Display';
-  font-weight: 400;
-  src: url('https://files.peachworlds.com/website/db5546d8-9a55-4633-b9f4-f418a51b08fb/clashdisplay-regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'Clash Display';
-  font-weight: 500;
-  src: url('https://files.peachworlds.com/website/a58e3e6d-52e0-494e-aebc-b2e048cfbfa7/clashdisplay-medium.woff') format('woff');
-}
-
 html {
   font-size: 15px;
   scroll-behavior: smooth;
@@ -26,7 +10,7 @@ html {
 body {
   background-color: #0d0d0d;
   color: #f0f0f0;
-  font-family: 'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 300;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
