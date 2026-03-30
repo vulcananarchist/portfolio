@@ -1,7 +1,7 @@
 import PageWrap from '@/components/PageWrap'
 import { ImgFull, Img2, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Dermat-AI — VK' }
+export const metadata = { title: 'Dermat-AI VK' }
 
 export default function DermatAI() {
   return (
@@ -30,7 +30,7 @@ export default function DermatAI() {
         ["MIT/Harvard","research collaboration"],
       ]} />
 
-      <Insight text="The most dangerous AI in healthcare isn't the one that's wrong — it's the one that's confidently wrong for patients who look different from the training data." />
+      <Insight text="The most dangerous AI in healthcare isn't the one that's wrong it's the one that's confidently wrong for patients who look different from the training data." />
 
       <Img2
         a="51353ec4-b427-4383-9e40-9bfaf8b0567a/4.png"
@@ -39,8 +39,8 @@ export default function DermatAI() {
 
       <Blk label="Design approach">
         <p>
-          <strong>Dermatologists are time-starved.</strong> The copilot surfaces the delta — what
-          changed since last visit and how significantly — before anything else. Every secondary
+          <strong>Dermatologists are time-starved.</strong> The copilot surfaces the delta what
+          changed since last visit and how significantly before anything else. Every secondary
           feature was cut if it added more than one additional glance.
         </p>
       </Blk>
