@@ -1,11 +1,10 @@
-import PageWrap from '@/components/PageWrap'
 import { ImgFull, Img2, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
 export const metadata = { title: 'Unretirement VK' }
 
 export default function Unretirement() {
   return (
-    <PageWrap>
+    <div>
       <h1 className="text-[1.3rem] font-medium leading-[1.25] mb-[0.3rem]">Unretirement</h1>
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
         Data Analysis · User Research · Product Design · Harvard
@@ -47,6 +46,6 @@ export default function Unretirement() {
       <ImgFull path="6172cd17-8a72-48a6-a5e2-94c0bab9b654/12.png" />
 
       <ProjNav prev="Autonomous Drones" prevHref="/projects/drones" next="XPend" nextHref="/projects/xpend" />
-    </PageWrap>
+    </div>
   )
 }
