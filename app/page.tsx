@@ -31,9 +31,7 @@ export default function Home() {
           human-centred design fluent in both model evaluation frameworks and user research.
         </p>
         <p className="body-p">
-          Harvard Design Engineer (SEAS + GSD). I've founded a company that got acquired,
-          shipped AI products used by real founders, and built healthcare tools that work
-          for the people who need them most.
+          Harvard Design Engineer (SEAS + GSD). I've founded a healthcare AI company.
         </p>
         <p className="body-p">
           Right now I'm focused on AI in healthcare where the stakes are high, the problems
