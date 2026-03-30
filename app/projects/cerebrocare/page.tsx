@@ -1,7 +1,7 @@
 import PageWrap from '@/components/PageWrap'
 import { ImgFull, Img2, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'CerebroCare — VK' }
+export const metadata = { title: 'CerebroCare VK' }
 
 export default function CerebroCare() {
   return (
@@ -29,7 +29,7 @@ export default function CerebroCare() {
         ["Pilot-ready","post competitions"],
       ]} />
 
-      <Insight text="The biggest barrier to stroke recovery isn't medical knowledge — it's the absence of a feedback loop between patient and clinician once the patient goes home." />
+      <Insight text="The biggest barrier to stroke recovery isn't medical knowledge it's the absence of a feedback loop between patient and clinician once the patient goes home." />
 
       <Img2
         a="e4850d64-6e3c-453c-ba24-81ab6a017ed1/Team.jpg"
@@ -43,7 +43,7 @@ export default function CerebroCare() {
           recovery plateaus; UX designed for older, lower-literacy users.
         </p>
         <p>
-          The wearable form factor was chosen for <strong>psychological continuity</strong> — daily
+          The wearable form factor was chosen for <strong>psychological continuity</strong> daily
           wear reinforces daily exercise. Alerts were deliberately low-frequency to avoid fatigue.
         </p>
       </Blk>
