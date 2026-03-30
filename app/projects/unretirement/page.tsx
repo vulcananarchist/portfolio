@@ -1,7 +1,7 @@
 import PageWrap from '@/components/PageWrap'
 import { ImgFull, Img2, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Unretirement — VK' }
+export const metadata = { title: 'Unretirement VK' }
 
 export default function Unretirement() {
   return (
@@ -29,7 +29,7 @@ export default function Unretirement() {
         ["Framework","actionable for a product team"],
       ]} />
 
-      <Insight text="Retirees returning to work aren't a niche edge case — they're a signal that employment products have failed to design for the full arc of a working life." />
+      <Insight text="Retirees returning to work aren't a niche edge case they're a signal that employment products have failed to design for the full arc of a working life." />
 
       <Img2
         a="468f9ac9-3bbb-4984-ba4e-28906e2adb27/6.png"
