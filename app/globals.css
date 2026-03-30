@@ -19,14 +19,14 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 15px;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #0d0d0d;
   color: #f0f0f0;
-  font-family: 'Clash Display', system-ui, sans-serif;
+  font-family: 'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 300;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
