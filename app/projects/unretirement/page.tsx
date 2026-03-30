@@ -7,9 +7,9 @@ export default function Unretirement() {
     <div>
       <h1 className="text-[1.3rem] font-medium leading-[1.25] mb-[0.3rem]">Unretirement</h1>
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
-        Data Analysis · User Research · Product Design · Harvard
+        Data Visualisation · User Research · Product Design · Harvard
       </p>
-      <Tags items={['Mixed Methods','User Interviews','Journey Mapping','Opportunity Sizing','Data Analysis']} />
+      <Tags items={['Data Visualisation','Mixed Methods','User Interviews','Journey Mapping','Opportunity Sizing']} />
 
       <ImgFull path="e504ecb5-109a-4fbf-aef2-99235712f0fb/1.png" />
 
@@ -44,6 +44,19 @@ export default function Unretirement() {
       </Blk>
 
       <ImgFull path="6172cd17-8a72-48a6-a5e2-94c0bab9b654/12.png" />
+
+      <Blk label="Data visualisation">
+        <p>The interactive data visualisation built to communicate findings.</p>
+      </Blk>
+
+      <div className="my-[1.4rem] rounded-sm overflow-hidden border border-white/[0.08]" style={{ aspectRatio: '16/9' }}>
+        <iframe
+          src="https://drive.google.com/file/d/1LnxRa1cdo5TqC0LijDwenyzYGHbpFUO0/preview"
+          className="w-full h-full"
+          allow="autoplay"
+          style={{ border: 'none' }}
+        />
+      </div>
 
       <ProjNav prev="Autonomous Drones" prevHref="/projects/drones" next="XPend" nextHref="/projects/xpend" />
     </div>
