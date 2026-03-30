@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import PageWrap from '@/components/PageWrap'
 
-export const metadata = { title: 'Projects — VK' }
+export const metadata = { title: 'Projects VK' }
 
 const projects = [
   {
     slug: 'ola',
     name: 'Ola!',
-    desc: 'Voice AI app for early dementia detection in women — MIT AI Hackathon winner',
+    desc: 'Voice AI app for early dementia detection in women MIT AI Hackathon winner',
     tags: ['Voice AI', "Women's Health", 'Cognitive Health'],
   },
   {
@@ -19,13 +19,13 @@ const projects = [
   {
     slug: 'dermat-ai',
     name: 'Dermat-AI',
-    desc: 'Longitudinal AI dermatology assessment — equitable diagnosis for underserved communities',
+    desc: 'Longitudinal AI dermatology assessment equitable diagnosis for underserved communities',
     tags: ['Healthcare', 'AI/ML', 'Product Strategy'],
   },
   {
     slug: 'drones',
     name: 'Autonomous Drones',
-    desc: 'Indoor GPS-denied navigation — 98.2% accuracy (DRDO)',
+    desc: 'Indoor GPS-denied navigation 98.2% accuracy (DRDO)',
     tags: ['ML', 'IoT', 'Autonomous Systems'],
   },
   {
@@ -37,19 +37,19 @@ const projects = [
   {
     slug: 'xpend',
     name: 'XPend',
-    desc: 'AI finance app — smart expense tracking and behavioural budgeting nudges',
+    desc: 'AI finance app smart expense tracking and behavioural budgeting nudges',
     tags: ['Fintech', 'AI', 'Product Management'],
   },
   {
     slug: 'storesmart',
     name: 'StoreSmart',
-    desc: 'IoT and ML cold storage optimisation to reduce post-harvest food loss — Indian Patent',
+    desc: 'IoT and ML cold storage optimisation to reduce post-harvest food loss Indian Patent',
     tags: ['AgTech', 'IoT', 'ML'],
   },
   {
     slug: 'aid-ally',
     name: 'Aid Ally',
-    desc: 'AR-guided crisis recovery and humanitarian aid — 48% faster deployment',
+    desc: 'AR-guided crisis recovery and humanitarian aid 48% faster deployment',
     tags: ['Crisis Tech', 'AR', 'UI/UX'],
   },
 ]
