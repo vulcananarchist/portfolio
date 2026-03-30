@@ -32,19 +32,15 @@ export default function ProjectsLayout({ children }: { children: React.ReactNode
 
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <motion.div
-        className="mx-auto px-6"
-        animate={{ maxWidth: isOpen ? '1100px' : '560px' }}
-        transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
-      >
+      {/* Header always wide */}
+      <div className="max-w-[1100px] mx-auto px-6">
         <Header />
-      </motion.div>
+      </div>
 
       {/* Body */}
       <motion.div
         className="mx-auto px-6"
-        animate={{ maxWidth: isOpen ? '1100px' : '560px' }}
+        animate={{ maxWidth: isOpen ? '1100px' : '1100px' }}
         transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
       >
         <div className="flex items-start">
@@ -118,13 +114,9 @@ export default function ProjectsLayout({ children }: { children: React.ReactNode
       </motion.div>
 
       {/* Footer */}
-      <motion.div
-        className="mx-auto px-6"
-        animate={{ maxWidth: isOpen ? '1100px' : '560px' }}
-        transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
-      >
+      <div className="max-w-[1100px] mx-auto px-6">
         <Footer />
-      </motion.div>
+      </div>
     </div>
   )
 }
