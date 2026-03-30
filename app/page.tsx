@@ -31,10 +31,8 @@ export default function Home() {
           human-centred design, fluent in both model evaluation frameworks and user research.
         </p>
         <p className="body-p">
-          Harvard-trained Design Engineer (SEAS + GSD, GPA 3.9). Previously co-founded{' '}
-          <strong>Raved Technologies</strong>, a computer vision dermatology platform acquired
-          by Oliva Clinics. Led AI product at HBS Foundry and WIPP AI. AI research at DRDO.
-          Advisor to a stealth healthcare startup.
+          Harvard-trained Design Engineer (SEAS + GSD, GPA 3.9). Led AI product at HBS Foundry
+          and WIPP AI. AI research at DRDO. Advisor to a stealth healthcare startup.
         </p>
         <p className="body-p">
           I build products that are technically rigorous and genuinely useful, especially
