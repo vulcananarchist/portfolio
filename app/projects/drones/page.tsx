@@ -1,7 +1,7 @@
 import PageWrap from '@/components/PageWrap'
 import { ImgFull, Img2, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Autonomous Drones — VK' }
+export const metadata = { title: 'Autonomous Drones VK' }
 
 export default function Drones() {
   return (
@@ -16,7 +16,7 @@ export default function Drones() {
 
       <Blk label="The problem">
         <p>
-          GPS fails in tunnels, dense urban environments, and contested zones — exactly where
+          GPS fails in tunnels, dense urban environments, and contested zones exactly where
           autonomous navigation matters most. Built at DRDO's Center for AI and Robotics, this
           system achieves reliable navigation with no external positioning signal.
         </p>
@@ -29,7 +29,7 @@ export default function Drones() {
         ["DRDO","India's premier defence lab"],
       ]} />
 
-      <Insight text="Designing for constraint is designing for trust — a system that degrades gracefully in the hardest conditions is more valuable than one that performs perfectly in ideal ones." />
+      <Insight text="Designing for constraint is designing for trust a system that degrades gracefully in the hardest conditions is more valuable than one that performs perfectly in ideal ones." />
 
       <Img2
         a="42fd3014-5b93-48f5-b4c2-66c74607dc5c/12.png"
