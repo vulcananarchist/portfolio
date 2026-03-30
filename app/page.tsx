@@ -28,15 +28,15 @@ export default function Home() {
           Deeply technical AI product builder specializing in{' '}
           <strong>conversational AI and prompt engineering</strong>, with 4+ years shipping
           0-to-1 consumer products. I work at the intersection of engineering depth and
-          human-centred design — fluent in both model evaluation frameworks and user research.
+          human-centred design fluent in both model evaluation frameworks and user research.
         </p>
         <p className="body-p">
           Harvard Design Engineer (SEAS + GSD). I've founded a company that got acquired,
-          shipped AI products used by real founders, and built systems that work in the field —
+          shipped AI products used by real founders, and built systems that work in the field 
           from stroke recovery wearables to autonomous drones for India's defence agency.
         </p>
         <p className="body-p">
-          Right now I'm focused on AI in healthcare — where the stakes are high, the problems
+          Right now I'm focused on AI in healthcare where the stakes are high, the problems
           are real, and good product thinking genuinely matters.
         </p>
       </div>
