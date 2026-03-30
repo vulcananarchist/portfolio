@@ -1,7 +1,7 @@
 import PageWrap from '@/components/PageWrap'
 import { ImgFull, Img2, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'XPend — VK' }
+export const metadata = { title: 'XPend VK' }
 
 export default function Xpend() {
   return (
@@ -12,14 +12,14 @@ export default function Xpend() {
       </p>
       <Tags items={['Behavioural Design','Conversational AI','Mobile UX','Consumer Psychology','A/B Testing']} />
 
-      {/* Leading with the emotional insight slide — the strongest image in the deck */}
+      {/* Leading with the emotional insight slide the strongest image in the deck */}
       <ImgFull path="8d4553ab-79a3-4785-b25c-9105d99c1116/These+unfulfiling+purchases+are+followed+by+feelings+of+guilt%2C+shame+and+regret.png" />
 
       <Blk label="The problem">
         <p>
           Most personal finance apps assume people overspend because they lack information.
-          They don't. Impulsive spending is emotional — triggered by stress, boredom, and
-          social cues — and happens in moments when no one is consulting a budget dashboard.
+          They don't. Impulsive spending is emotional triggered by stress, boredom, and
+          social cues and happens in moments when no one is consulting a budget dashboard.
         </p>
       </Blk>
 
@@ -39,7 +39,7 @@ export default function Xpend() {
 
       <Blk label="Design decisions">
         <p>
-          No charts on the home screen. The primary surface is a conversational input — because
+          No charts on the home screen. The primary surface is a conversational input because
           people engage with finances more honestly in dialogue than in front of graphs. The
           entire interface was designed for the emotional state users are actually in when they
           overspend.
