@@ -1,11 +1,10 @@
-import PageWrap from '@/components/PageWrap'
 import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
 export const metadata = { title: 'StoreSmart VK' }
 
 export default function StoreSmart() {
   return (
-    <PageWrap>
+    <div>
       <h1 className="text-[1.3rem] font-medium leading-[1.25] mb-[0.3rem]">StoreSmart</h1>
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
         AgTech · ML · IoT · Karnataka, India · Indian Patent
@@ -45,6 +44,6 @@ export default function StoreSmart() {
       <ImgFull path="60f44a1b-9ab0-48b9-8b75-1c70ee0d0e5d/Assets.png" />
 
       <ProjNav prev="XPend" prevHref="/projects/xpend" next="Aid Ally" nextHref="/projects/aid-ally" />
-    </PageWrap>
+    </div>
   )
 }
