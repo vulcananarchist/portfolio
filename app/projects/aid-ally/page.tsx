@@ -1,7 +1,7 @@
 import PageWrap from '@/components/PageWrap'
 import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Aid Ally — VK' }
+export const metadata = { title: 'Aid Ally VK' }
 
 export default function AidAlly() {
   return (
