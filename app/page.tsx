@@ -25,16 +25,15 @@ export default function Home() {
 
       <div className="space-y-[0.9rem] mb-[1.3rem]">
         <p className="body-p">
-          I'm an AI product manager and engineer with 4+ years building 0-to-1 products
-          at the intersection of healthcare and technology. I've founded a healthcare AI
-          company, led AI product teams at Harvard and early-stage startups, and I specialise
-          in conversational AI, prompt engineering, and getting research-grade ideas into
-          the hands of real users.
+          I'm an AI product manager and engineer who builds at the intersection of
+          healthcare and technology. I've founded a healthcare AI company, led AI product
+          teams at Harvard and early-stage startups, and spent 4+ years getting ideas
+          from zero to one.
         </p>
         <p className="body-p">
-          Harvard Design Engineer (SEAS + GSD). I care about products where the stakes
-          are real — where good thinking and careful execution actually change outcomes
-          for people.
+          I specialise in conversational AI and prompt engineering — the gap between what
+          models can do and what users actually need. Harvard Design Engineer (SEAS + GSD).
+          I care about products where the stakes are real.
         </p>
       </div>
 
