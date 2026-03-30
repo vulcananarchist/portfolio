@@ -1,11 +1,10 @@
-import PageWrap from '@/components/PageWrap'
 import { ImgFull, Img2, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
 export const metadata = { title: 'Autonomous Drones VK' }
 
 export default function Drones() {
   return (
-    <PageWrap>
+    <div>
       <h1 className="text-[1.3rem] font-medium leading-[1.25] mb-[0.3rem]">Autonomous Drones</h1>
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
         ML · IoT · Autonomous Systems · DRDO
@@ -48,6 +47,6 @@ export default function Drones() {
       <ImgFull path="8989375c-0e95-4834-82d2-9e1dedd764c4/15.png" />
 
       <ProjNav prev="Dermat-AI" prevHref="/projects/dermat-ai" next="Unretirement" nextHref="/projects/unretirement" />
-    </PageWrap>
+    </div>
   )
 }
