@@ -32,8 +32,8 @@ export default function Home() {
         </p>
         <p className="body-p">
           Harvard Design Engineer (SEAS + GSD). I've founded a company that got acquired,
-          shipped AI products used by real founders, and built systems that work in the field 
-          from stroke recovery wearables to autonomous drones for India's defence agency.
+          shipped AI products used by real founders, and built healthcare tools that work
+          for the people who need them most.
         </p>
         <p className="body-p">
           Right now I'm focused on AI in healthcare where the stakes are high, the problems
