@@ -53,24 +53,6 @@ export default function Experience() {
       </section>
 
       <section className="mb-[2.8rem]">
-        <h2 className="section-label">Recognition</h2>
-        <div>
-          <div className="award-item">
-            <span className="text-acc flex-shrink-0 mt-[0.15rem]">◆</span>
-            <span>Winner, MIT AI Hackathon AI Dementia Detection tool (1,000+ teams)</span>
-          </div>
-          <div className="award-item">
-            <span className="text-acc flex-shrink-0 mt-[0.15rem]">◆</span>
-            <span>Inventor &amp; Applicant Indian Patent: Machine Learning-Based Produce Preservation System (Docket No. 2216901-NS)</span>
-          </div>
-          <div className="award-item">
-            <span className="text-acc flex-shrink-0 mt-[0.15rem]">◆</span>
-            <span>Winner, Rajasthan Hackathon Computer Vision Pest Detection in Stored Grains (15,000+ teams)</span>
-          </div>
-        </div>
-      </section>
-
-      <section>
         <h2 className="section-label">Education</h2>
         <div>
           <div className="tl-item">
@@ -89,6 +71,24 @@ export default function Experience() {
               <div className="tl-role">B.E. Electronics &amp; Instrumentation GPA 8.28/10</div>
               <div className="tl-desc">Focus: Robotics &amp; AI. Best Capstone Project Award.</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="section-label">Recognition</h2>
+        <div>
+          <div className="award-item">
+            <span className="text-acc flex-shrink-0 mt-[0.15rem]">◆</span>
+            <span>Winner, MIT AI Hackathon AI Dementia Detection tool (1,000+ teams)</span>
+          </div>
+          <div className="award-item">
+            <span className="text-acc flex-shrink-0 mt-[0.15rem]">◆</span>
+            <span>Inventor &amp; Applicant Indian Patent: Machine Learning-Based Produce Preservation System (Docket No. 2216901-NS)</span>
+          </div>
+          <div className="award-item">
+            <span className="text-acc flex-shrink-0 mt-[0.15rem]">◆</span>
+            <span>Winner, Rajasthan Hackathon Computer Vision Pest Detection in Stored Grains (15,000+ teams)</span>
           </div>
         </div>
       </section>
