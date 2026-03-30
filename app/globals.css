@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Clash Display';
+  font-weight: 300;
+  src: url('https://files.peachworlds.com/website/b081bca2-b3ee-4873-8492-fbb5d261d24c/clashdisplay-light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Clash Display';
+  font-weight: 400;
+  src: url('https://files.peachworlds.com/website/db5546d8-9a55-4633-b9f4-f418a51b08fb/clashdisplay-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Clash Display';
+  font-weight: 500;
+  src: url('https://files.peachworlds.com/website/a58e3e6d-52e0-494e-aebc-b2e048cfbfa7/clashdisplay-medium.woff') format('woff');
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  font-family: 'Clash Display', system-ui, sans-serif;
+  font-weight: 300;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(240, 240, 240, 0.15);
+}
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: #0d0d0d; }
+::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 2px; }
+
+@layer components {
+  /* Nav links */
+  .nav-link {
+    @apply text-[0.8rem] text-muted no-underline transition-colors duration-150 hover:text-tx;
+  }
+  .nav-link-active {
+    @apply text-acc;
+  }
+
+  /* Section label */
+  .section-label {
+    @apply text-[0.68rem] font-medium uppercase tracking-[0.12em] text-muted mb-[1.2rem];
+  }
+
+  /* Project tag pill */
+  .proj-tag {
+    @apply text-[0.67rem] text-muted bg-bg3 border border-white/[0.08] px-[0.55rem] py-[0.18rem] rounded-sm;
+  }
+
+  /* Insight block */
+  .insight-block {
+    @apply border-l border-acc pl-[1.1rem] my-[1.6rem] bg-acc/[0.04] rounded-r-sm py-[0.85rem];
+  }
+
+  /* Stat card */
+  .stat-card {
+    @apply px-[0.7rem] py-[0.8rem] border border-white/[0.08] rounded-sm bg-bg2;
+  }
+
+  /* Full-width image */
+  .img-full {
+    @apply w-full block rounded-sm border border-white/[0.08] my-[1.4rem];
+  }
+
+  /* 2-col image grid */
+  .img-2 {
+    @apply grid grid-cols-2 gap-[0.5rem] my-[1.4rem];
+  }
+  .img-2 img {
+    @apply w-full block rounded-sm border border-white/[0.08];
+  }
+
+  /* Text block */
+  .blk {
+    @apply my-[1.4rem];
+  }
+  .blk-label {
+    @apply text-[0.62rem] font-medium uppercase tracking-[0.12em] text-muted mb-[0.5rem];
+  }
+  .blk p {
+    @apply text-[0.855rem] text-[rgba(240,240,240,0.62)] leading-[1.8] mb-[0.6rem] last:mb-0;
+  }
+  .blk p strong {
+    @apply text-tx font-medium;
+  }
+
+  /* Body text */
+  .body-p {
+    @apply text-[0.855rem] text-[rgba(240,240,240,0.62)] leading-[1.85] mb-[0.9rem] last:mb-0;
+  }
+  .body-p strong {
+    @apply text-tx font-medium;
+  }
+
+  /* Timeline */
+  .tl-item {
+    @apply grid grid-cols-[1fr_auto] gap-x-6 py-[0.9rem] border-t border-white/[0.08] last:border-b;
+  }
+  .tl-org {
+    @apply text-[0.68rem] font-medium uppercase tracking-[0.09em] text-acc mb-[0.2rem];
+  }
+  .tl-role {
+    @apply text-[0.875rem] font-medium text-tx mb-[0.35rem];
+  }
+  .tl-desc {
+    @apply text-[0.8rem] text-[rgba(240,240,240,0.62)] leading-[1.6];
+  }
+  .tl-tag {
+    @apply text-[0.67rem] text-muted bg-bg3 border border-white/[0.08] px-[0.55rem] py-[0.2rem] rounded-sm whitespace-nowrap self-start mt-[0.1rem];
+  }
+
+  /* Award item */
+  .award-item {
+    @apply flex gap-[0.8rem] py-[0.75rem] border-t border-white/[0.08] last:border-b text-[0.835rem] text-[rgba(240,240,240,0.62)] leading-[1.55] items-start;
+  }
+
+  /* Project list item */
+  .project-item {
+    @apply flex items-start justify-between gap-4 py-[0.9rem] border-t border-white/[0.08] last:border-b no-underline text-tx transition-opacity duration-150;
+  }
+
+  /* Chip */
+  .chip {
+    @apply text-[0.68rem] text-muted bg-bg3 border border-white/[0.08] px-[0.6rem] py-[0.2rem] rounded-sm transition-colors duration-150 hover:border-acc hover:text-acc;
+  }
+
+  /* Connect button */
+  .connect-btn {
+    @apply inline-flex items-center gap-[0.45rem] text-[0.8rem] text-muted no-underline border border-white/[0.08] px-4 py-[0.45rem] rounded-sm transition-colors duration-150 hover:text-acc hover:border-acc;
+  }
+
+  /* Project nav */
+  .proj-nav-link {
+    @apply text-[0.8rem] text-muted no-underline transition-colors duration-150 hover:text-acc;
+  }
+}
