@@ -18,7 +18,8 @@ const config: Config = {
         acc: '#c5cad4',
       },
       fontFamily: {
-        clash: ['Clash Display', 'system-ui', 'sans-serif'],
+        sans: ['Nunito Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        clash: ['Nunito Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
     },
   },
