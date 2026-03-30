@@ -32,8 +32,8 @@ export default function Experience() {
               <div className="tl-org">Raved Technologies · Bangalore, India</div>
               <div className="tl-role">Founder &amp; Product Lead</div>
               <div className="tl-desc">
-                Founded and led a dermatology AI startup from zero to acquisition by Oliva Clinics,
-                building an 81%-accurate CV model and shipping MVP in 4 months.
+                Founded and led a dermatology AI startup, building an 81%-accurate CV model
+                and shipping MVP in 4 months.
               </div>
             </div>
             <span className="tl-tag">Founder</span>
