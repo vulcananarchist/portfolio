@@ -21,7 +21,7 @@ export default function Writing() {
         <h2 className="text-[0.68rem] font-medium uppercase tracking-[0.12em] text-muted mb-[1.2rem]">Writing</h2>
         <div className="mb-[1.8rem] pb-[1.8rem] border-b border-white/[0.08]">
           <p className="body-p">
-            <strong>Healthtech, actually</strong> cuts through the noise in health tech — what's
+            <strong>Healthtech, actually</strong> cuts through the noise in health tech what's
             working, what's not, and what actually matters for people building at the intersection
             of AI and healthcare.
           </p>
@@ -47,7 +47,7 @@ export default function Writing() {
             <p className="text-[0.8rem] text-muted py-2">Loading posts...</p>
           )}
           {!error && posts?.length === 0 && (
-            <p className="text-[0.8rem] text-muted py-2">No posts yet — check back soon.</p>
+            <p className="text-[0.8rem] text-muted py-2">No posts yet check back soon.</p>
           )}
           {posts?.map(p => {
             const url = p.canonical_url ?? `https://healthtechactually.substack.com/p/${p.slug ?? ''}`
