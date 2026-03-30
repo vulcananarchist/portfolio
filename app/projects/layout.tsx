@@ -1,7 +1,8 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -18,41 +19,43 @@ const projects = [
 
 export default function ProjectsLayout({ children }: { children: React.ReactNode }) {
   const path = usePathname()
-  const isProjectOpen = path !== '/projects' && path !== '/projects/'
-  const [open, setOpen] = useState(isProjectOpen)
+  const isOpen = path !== '/projects' && path !== '/projects/'
+  const prevPath = useRef(path)
+  const [key, setKey] = useState(path)
 
   useEffect(() => {
-    // slight delay so CSS transition fires after mount
-    const t = setTimeout(() => setOpen(isProjectOpen), 10)
-    return () => clearTimeout(t)
-  }, [isProjectOpen])
+    if (prevPath.current !== path) {
+      prevPath.current = path
+      setKey(path)
+    }
+  }, [path])
 
   return (
     <div className="min-h-screen">
-      {/* Header always at full width */}
-      <div
-        className="mx-auto px-6 transition-all duration-500 ease-in-out"
-        style={{ maxWidth: open ? '1100px' : '560px' }}
+      {/* Header */}
+      <motion.div
+        className="mx-auto px-6"
+        animate={{ maxWidth: isOpen ? '1100px' : '560px' }}
+        transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
       >
         <Header />
-      </div>
+      </motion.div>
 
       {/* Body */}
-      <div
-        className="mx-auto px-6 transition-all duration-500 ease-in-out"
-        style={{ maxWidth: open ? '1100px' : '560px' }}
+      <motion.div
+        className="mx-auto px-6"
+        animate={{ maxWidth: isOpen ? '1100px' : '560px' }}
+        transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
       >
-        <div className="flex gap-0">
+        <div className="flex items-start">
 
-          {/* Sidebar — slides in/out */}
-          <aside
-            className="flex-shrink-0 overflow-hidden transition-all duration-500 ease-in-out"
-            style={{
-              width: open ? '210px' : '0px',
-              opacity: open ? 1 : 0,
-            }}
+          {/* Sidebar */}
+          <motion.aside
+            className="flex-shrink-0 overflow-hidden"
+            animate={{ width: isOpen ? 210 : 0, opacity: isOpen ? 1 : 0 }}
+            transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
           >
-            <div className="sticky top-8 w-[210px]">
+            <div className="sticky top-8 w-[210px] pr-0">
               <div className="text-[0.62rem] font-medium uppercase tracking-[0.14em] text-muted mb-4">
                 Projects
               </div>
@@ -63,46 +66,65 @@ export default function ProjectsLayout({ children }: { children: React.ReactNode
                     <Link
                       key={p.slug}
                       href={`/projects/${p.slug}`}
-                      className={`flex flex-col py-[0.65rem] border-t border-white/[0.08] last:border-b no-underline transition-all duration-200 ${
+                      className={`flex flex-col py-[0.65rem] border-t border-white/[0.08] last:border-b no-underline transition-opacity duration-200 ${
                         active ? 'opacity-100' : 'opacity-40 hover:opacity-75'
                       }`}
                     >
                       <span className="text-[0.8rem] font-medium text-tx">{p.name}</span>
                       <span className="text-[0.67rem] text-muted mt-[0.1rem]">{p.tags.join(' · ')}</span>
-                      {active && <span className="block w-4 h-px bg-acc mt-[0.4rem]" />}
+                      {active && (
+                        <motion.span
+                          layoutId="activeBar"
+                          className="block h-px bg-acc mt-[0.4rem]"
+                          style={{ width: 16 }}
+                        />
+                      )}
                     </Link>
                   )
                 })}
               </nav>
             </div>
-          </aside>
+          </motion.aside>
 
-          {/* Divider — fades in */}
-          <div
-            className="flex-shrink-0 transition-all duration-500 ease-in-out"
-            style={{
-              width: open ? '1px' : '0px',
-              margin: open ? '0 2.5rem' : '0',
-              background: 'rgba(255,255,255,0.08)',
-              opacity: open ? 1 : 0,
-              alignSelf: 'stretch',
+          {/* Divider */}
+          <motion.div
+            className="self-stretch flex-shrink-0"
+            animate={{
+              width: isOpen ? 1 : 0,
+              marginLeft: isOpen ? 40 : 0,
+              marginRight: isOpen ? 40 : 0,
+              opacity: isOpen ? 1 : 0,
             }}
+            transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
+            style={{ background: 'rgba(255,255,255,0.08)' }}
           />
 
-          {/* Main content */}
-          <main className="flex-1 min-w-0 pb-16">
-            {children}
+          {/* Content — fades between projects */}
+          <main className="flex-1 min-w-0 pb-16 overflow-hidden">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={key}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -6 }}
+                transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
+              >
+                {children}
+              </motion.div>
+            </AnimatePresence>
           </main>
 
         </div>
-      </div>
+      </motion.div>
 
-      <div
-        className="mx-auto px-6 transition-all duration-500 ease-in-out"
-        style={{ maxWidth: open ? '1100px' : '560px' }}
+      {/* Footer */}
+      <motion.div
+        className="mx-auto px-6"
+        animate={{ maxWidth: isOpen ? '1100px' : '560px' }}
+        transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
       >
         <Footer />
-      </div>
+      </motion.div>
     </div>
   )
 }
