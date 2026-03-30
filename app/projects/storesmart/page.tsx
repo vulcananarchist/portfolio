@@ -1,7 +1,7 @@
 import PageWrap from '@/components/PageWrap'
 import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'StoreSmart — VK' }
+export const metadata = { title: 'StoreSmart VK' }
 
 export default function StoreSmart() {
   return (
@@ -16,7 +16,7 @@ export default function StoreSmart() {
 
       <Blk label="The problem">
         <p>
-          India loses 30 to 40% of produce to post-harvest storage failures every year — not
+          India loses 30 to 40% of produce to post-harvest storage failures every year not
           because cold storage doesn't exist, but because it has no intelligence. Farmers have
           no early warning before spoilage begins.
         </p>
@@ -29,7 +29,7 @@ export default function StoreSmart() {
         ["15,000+","teams, Rajasthan Hackathon"],
       ]} />
 
-      <Insight text="The most impactful technology in agriculture isn't what replaces existing infrastructure — it's what makes existing infrastructure work." />
+      <Insight text="The most impactful technology in agriculture isn't what replaces existing infrastructure it's what makes existing infrastructure work." />
 
       <ImgFull path="bdf0a924-35bb-4710-a214-39c301de5c59/Problem_Post+harvest+losses+in+storage+facilities.png" />
 
