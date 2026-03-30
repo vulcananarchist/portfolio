@@ -28,15 +28,16 @@ export default function Home() {
           Deeply technical AI product builder specializing in{' '}
           <strong>conversational AI and prompt engineering</strong>, with 4+ years shipping
           0-to-1 consumer products. I work at the intersection of engineering depth and
-          human-centred design, fluent in both model evaluation frameworks and user research.
+          human-centred design — fluent in both model evaluation frameworks and user research.
         </p>
         <p className="body-p">
-          Harvard-trained Design Engineer (SEAS + GSD, GPA 3.9). Led AI product at HBS Foundry
-          and WIPP AI. AI research at DRDO. Advisor to a stealth healthcare startup.
+          Harvard Design Engineer (SEAS + GSD). I've founded a company that got acquired,
+          shipped AI products used by real founders, and built systems that work in the field —
+          from stroke recovery wearables to autonomous drones for India's defence agency.
         </p>
         <p className="body-p">
-          I build products that are technically rigorous and genuinely useful, especially
-          in healthcare, policy, and underserved communities.
+          Right now I'm focused on AI in healthcare — where the stakes are high, the problems
+          are real, and good product thinking genuinely matters.
         </p>
       </div>
 
