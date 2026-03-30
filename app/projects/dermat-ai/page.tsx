@@ -24,8 +24,8 @@ export default function DermatAI() {
           the technology meant to help them.
         </p>
         <p>
-          Dermat-AI is a diagnostic AI copilot built specifically to close that gap — combining
-          a <strong>proprietary computer vision model</strong> with longitudinal tracking
+          Dermat-AI is a diagnostic AI copilot built to close that gap — combining a
+          <strong> proprietary computer vision model</strong> with longitudinal tracking
           to catch what single-visit snapshots miss.
         </p>
       </Blk>
