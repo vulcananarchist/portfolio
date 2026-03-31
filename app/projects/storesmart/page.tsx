@@ -1,6 +1,6 @@
 import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'StoreSmart — VK' }
+export const metadata = { title: 'StoreSmart - VK' }
 
 export default function StoreSmart() {
   return (
@@ -38,7 +38,7 @@ export default function StoreSmart() {
           of farmers simultaneously. Every technical decision had to survive that context.
         </p>
         <p>
-          The alert system was <strong>SMS-first</strong> — not because it was easier to build,
+          The alert system was <strong>SMS-first</strong> - not because it was easier to build,
           but because it was the only channel guaranteed to reach the user. The dashboard was
           built for weekly review cycles, not hourly monitoring. Sensor hardware was designed
           for installation by non-technical staff in under 20 minutes, because a system that
