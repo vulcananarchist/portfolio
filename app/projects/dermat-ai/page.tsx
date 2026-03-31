@@ -1,6 +1,6 @@
 import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Dermat-AI — VK' }
+export const metadata = { title: 'Dermat-AI - VK' }
 
 export default function DermatAI() {
   return (
