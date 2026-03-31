@@ -7,7 +7,7 @@ export default function Ola() {
     <div>
       <h1 className="text-[1.3rem] font-medium leading-[1.25] mb-[0.3rem]">Ola!</h1>
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
-        Voice AI · Women's Health · Cognitive Screening · MIT AI Hackathon Winner
+        Voice AI · Women's Health · MIT AI Hackathon Winner · 2024
       </p>
       <Tags items={['Voice Biomarkers','Acoustic AI',"Women's Health",'Longitudinal Tracking','Mobile UX']} />
 
