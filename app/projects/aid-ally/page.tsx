@@ -1,6 +1,6 @@
 import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Aid Ally — VK' }
+export const metadata = { title: 'Aid Ally - VK' }
 
 export default function AidAlly() {
   return (
@@ -15,8 +15,8 @@ export default function AidAlly() {
 
       <Blk label="The problem">
         <p>
-          After a disaster, medical supply chains collapse within hours. Orthopaedic devices —
-          crutches, splints, mobility aids — become unavailable for weeks, exactly when trauma
+          After a disaster, medical supply chains collapse within hours. Orthopaedic devices -
+          crutches, splints, mobility aids - become unavailable for weeks, exactly when trauma
           survivors need them most. The manufacturing problem is solvable with 3D printing.
           The harder problem is that the people assembling the devices have no training,
           no internet access, and may not be literate.
@@ -39,12 +39,12 @@ export default function AidAlly() {
           was tested against all three.
         </p>
         <p>
-          The AR overlay used spatial anchoring rather than text labels — a component highlights
+          The AR overlay used spatial anchoring rather than text labels - a component highlights
           when it is the active step, not when a label describes it. Assembly steps were
           sequenced to be <strong>reversible</strong>: a wrong move could be undone without
           starting over, because in a field context, restarting from scratch is often not possible.
           The crutch design itself was modular, so a partially assembled device was still
-          functional — partial help in a disaster is categorically better than no help.
+          functional - partial help in a disaster is categorically better than no help.
         </p>
       </Blk>
 
