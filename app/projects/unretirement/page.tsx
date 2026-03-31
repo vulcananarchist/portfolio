@@ -1,6 +1,6 @@
-import { ImgFull, Img2, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
+import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Unretirement VK' }
+export const metadata = { title: 'Unretirement — VK' }
 
 export default function Unretirement() {
   return (
@@ -9,44 +9,42 @@ export default function Unretirement() {
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
         Data Visualisation · User Research · Product Design · Harvard
       </p>
-      <Tags items={['Data Visualisation','Mixed Methods','User Interviews','Journey Mapping','Opportunity Sizing']} />
+      <Tags items={['Mixed Methods','User Research','Journey Mapping','Data Visualisation','Opportunity Sizing']} />
 
       <ImgFull path="e504ecb5-109a-4fbf-aef2-99235712f0fb/1.png" />
 
       <Blk label="The problem">
         <p>
-          Existing employment platforms treat all job-seekers as equivalent, creating friction
-          specifically for people with non-linear careers and multi-decade gaps. This research
-          investigated the unretirement trend to surface the product opportunity.
+          Between 2020 and 2023, the number of Americans returning to work after retirement
+          grew significantly — driven by meaning and identity as much as economic pressure.
+          Yet every major employment platform treats them identically to a 28-year-old first
+          job-seeker. The friction is designed in.
         </p>
       </Blk>
 
       <Stats items={[
-        ["3","user archetypes identified"],
-        ["Mixed","quant + qual methods"],
-        ["Harvard","graduate research"],
-        ["Framework","actionable for a product team"],
+        ["3","distinct user archetypes identified"],
+        ["Mixed","quantitative and qualitative methods"],
+        ["JTBD","framework applied at each re-entry stage"],
+        ["Harvard","graduate research project"],
       ]} />
 
-      <Insight text="Retirees returning to work aren't a niche edge case they're a signal that employment products have failed to design for the full arc of a working life." />
+      <Insight text="Retirees returning to work aren't a niche edge case. They're a signal that employment products have failed to design for the full arc of a working life." />
 
-      <Img2
-        a="468f9ac9-3bbb-4984-ba4e-28906e2adb27/6.png"
-        b="369e766e-9f3c-4242-bba0-e6c6feb0ac2f/7.png"
-      />
-
-      <Blk label="Research to product">
+      <Blk label="My approach">
         <p>
-          The output was a <strong>product opportunity framework</strong>: three defined segments,
-          their unmet needs, jobs-to-be-done at each re-entry stage, and prioritised intervention
-          points. Designed to be actionable for a product team, not just a research report.
+          The research combined labour market data analysis with qualitative interviews across
+          three distinct returning-worker archetypes: the financially-driven, the identity-driven,
+          and the opportunity-driven. Each had entirely different jobs-to-be-done at each stage
+          of re-entry, and none of them were being served by existing platforms.
         </p>
-      </Blk>
-
-      <ImgFull path="6172cd17-8a72-48a6-a5e2-94c0bab9b654/12.png" />
-
-      <Blk label="Data visualisation">
-        <p>The interactive data visualisation built to communicate findings.</p>
+        <p>
+          The output was not a research report. It was a <strong>product opportunity framework</strong>:
+          three defined segments, their unmet needs mapped against re-entry stages, and
+          prioritised intervention points where a product could reduce friction. The data
+          visualisation below was built to communicate those findings in a form that a product
+          team could act on directly.
+        </p>
       </Blk>
 
       <div className="my-[1.4rem] rounded-sm overflow-hidden border border-white/[0.08]" style={{ aspectRatio: '16/9' }}>
