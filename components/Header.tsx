@@ -15,7 +15,7 @@ const navLinks = [
 export default function Header() {
   const path = usePathname()
   return (
-    <header className="pt-6 pb-5 border-b border-white/[0.08] mb-10">
+    <header className="pt-5 pb-4 border-b border-white/[0.08] mb-8 sm:mb-10">
       <div className="flex items-center justify-between gap-4 flex-wrap">
         <Link href="/" className="flex items-center gap-[0.65rem] no-underline text-tx hover:text-acc transition-colors">
           <div className="w-7 h-7 rounded-full bg-bg3 border border-white/[0.14] flex-shrink-0 overflow-hidden flex items-center justify-center text-[10px] text-acc">
@@ -27,7 +27,7 @@ export default function Header() {
           </div>
           <span className="text-[0.88rem] font-medium">Vaishnavi Krishnamurthy</span>
         </Link>
-        <nav className="flex items-center gap-6 flex-wrap">
+        <nav className="flex items-center gap-4 sm:gap-6 flex-wrap">
           {navLinks.map(({ href, label, match }) => (
             href.startsWith('mailto') ? (
               <a key={label} href={href} className="nav-link">{label}</a>
