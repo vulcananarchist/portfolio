@@ -31,7 +31,7 @@ export default function Home() {
           from zero to one.
         </p>
         <p className="body-p">
-          I specialise in conversational AI and prompt engineering — the gap between what
+          I specialise in conversational AI and prompt engineering - the gap between what
           models can do and what users actually need. Harvard Design Engineer (SEAS + GSD).
           I care about products where the stakes are real.
         </p>
