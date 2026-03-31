@@ -7,7 +7,7 @@ export default function Unretirement() {
     <div>
       <h1 className="text-[1.3rem] font-medium leading-[1.25] mb-[0.3rem]">Unretirement</h1>
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
-        Data Visualisation · User Research · Product Design · Harvard
+        Data Visualisation · User Research · Harvard · 2023
       </p>
       <Tags items={['Mixed Methods','User Research','Journey Mapping','Data Visualisation','Opportunity Sizing']} />
 
