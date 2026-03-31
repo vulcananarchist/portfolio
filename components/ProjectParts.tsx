@@ -37,7 +37,7 @@ export function Insight({ text }: { text: string }) {
 
 export function Stats({ items }: { items: [string, string][] }) {
   return (
-    <div className="grid grid-cols-4 gap-2 my-[1.4rem]">
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 my-[1.4rem]">
       {items.map(([n, l]) => (
         <div key={l} className="stat-card">
           <div className="text-[1.1rem] font-medium text-tx leading-none mb-[0.2rem]">{n}</div>
