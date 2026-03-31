@@ -1,6 +1,6 @@
 import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Autonomous Drones — VK' }
+export const metadata = { title: 'Autonomous Drones - VK' }
 
 export default function Drones() {
   return (
@@ -15,7 +15,7 @@ export default function Drones() {
 
       <Blk label="The problem">
         <p>
-          GPS fails in tunnels, dense urban environments, and electronic warfare zones — exactly
+          GPS fails in tunnels, dense urban environments, and electronic warfare zones - exactly
           where autonomous navigation matters most. India's defence systems needed drones that
           could operate without any external positioning signal, in real time, on embedded hardware
           with strict power constraints.
