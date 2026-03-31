@@ -30,7 +30,7 @@ export default function Ola() {
       <Stats items={[
         ["70%","of Alzheimer's patients are women"],
         ["10-15yr","before formal diagnosis"],
-        ["1st place","MIT AI Hackathon, 1,000+ teams"],
+        ["3rd place","MIT AI Hackathon, 1,000+ teams"],
         ["Passive","no clinic, no wearable needed"],
       ]} />
 
