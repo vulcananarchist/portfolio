@@ -71,6 +71,20 @@ export default function Equiderm() {
 
       <img src="/eq-solution.jpg" alt="Equiderm — Agentic AI clinical decision support tool" className="img-full" loading="lazy" />
 
+      <Blk label="App walkthrough">
+        <p>A full walkthrough of the Equiderm clinical interface.</p>
+      </Blk>
+
+      <div className="my-[1.4rem] rounded-sm overflow-hidden border border-white/[0.08]" style={{ aspectRatio: '16/9' }}>
+        <iframe
+          src="https://www.youtube.com/embed/0-vp8iV1_8I"
+          className="w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          style={{ border: 'none' }}
+        />
+      </div>
+
       <ProjNav prev="CerebroCare" prevHref="/projects/cerebrocare" next="Unretirement" nextHref="/projects/unretirement" />
     </div>
   )
