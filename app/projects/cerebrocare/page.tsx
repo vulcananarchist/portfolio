@@ -1,6 +1,6 @@
-import { ImgFull, Img2, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
+import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'CerebroCare VK' }
+export const metadata = { title: 'CerebroCare — VK' }
 
 export default function CerebroCare() {
   return (
@@ -9,48 +9,50 @@ export default function CerebroCare() {
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
         Healthcare · IoT Wearable · ML · Co-Founder
       </p>
-      <Tags items={['Product Strategy','ML Integration','Wearable UX','Market Analysis','0 to 1']} />
+      <Tags items={['Product Strategy','Wearable UX','ML','Stakeholder Research','0 to 1']} />
 
       <ImgFull path="7df6dbeb-8278-420b-bec4-6fc15ba87144/MEntire+system++%281%29.jpg" />
 
       <Blk label="The problem">
         <p>
           80% of stroke survivors receive inadequate post-acute rehabilitation. Not because care
-          doesn't exist, but because the system loses visibility the moment patients go home.
-          CerebroCare adds the missing feedback loop.
+          doesn't exist, but because the system has no visibility once patients leave hospital.
+          Clinicians cannot monitor what they cannot see. Patients cannot improve without feedback.
+          CerebroCare closes that loop.
         </p>
       </Blk>
 
       <Stats items={[
         ["80%","of survivors get inadequate rehab"],
-        ["2-person","founding team"],
-        ["ML","risk models for drop-off"],
-        ["Pilot-ready","post competitions"],
+        ["30+","stakeholder interviews"],
+        ["ML","models to flag recovery drop-off"],
+        ["Co-founded","0 to 1"],
       ]} />
 
-      <Insight text="The biggest barrier to stroke recovery isn't medical knowledge it's the absence of a feedback loop between patient and clinician once the patient goes home." />
+      <Insight text="The biggest barrier to stroke recovery isn't medical knowledge. It's the absence of a feedback loop between patient and clinician once the patient goes home." />
 
-      <Img2
-        a="e4850d64-6e3c-453c-ba24-81ab6a017ed1/Team.jpg"
-        b="a72816ea-e3b5-4a3f-b526-b77f17acb4af/V_+Problem.jpg"
-      />
-
-      <Blk label="What I built">
+      <Blk label="My approach">
         <p>
-          Led all product and strategy: 30+ stakeholder interviews with neurologists, therapists,
-          and patients; MVP around adherence tracking and remote monitoring; ML models to flag
-          recovery plateaus; UX designed for older, lower-literacy users.
+          I led all product and strategy work from day one. The first six weeks were entirely
+          research: 30+ interviews with neurologists, physiotherapists, and stroke survivors
+          across two hospitals. The consistent finding was that drop-off happens in the first
+          two weeks at home, and no one sees it coming.
         </p>
         <p>
-          The wearable form factor was chosen for <strong>psychological continuity</strong> daily
-          wear reinforces daily exercise. Alerts were deliberately low-frequency to avoid fatigue.
+          The MVP was scoped tightly around adherence tracking and remote monitoring — not
+          therapy delivery, which was a common trap. We built ML models to flag patients
+          whose recovery was plateauing before it became visible to clinicians.
+        </p>
+        <p>
+          The wearable form factor was a deliberate product decision, not a technical one.
+          A device worn daily becomes a physical reminder to do exercises. We chose{' '}
+          <strong>psychological continuity over pure data collection.</strong> Every alert
+          was low-frequency by design — alert fatigue kills adherence faster than no alerts at all.
+          All UX was validated with patients who had limited smartphone familiarity.
         </p>
       </Blk>
 
-      <Img2
-        a="b112f47c-9627-4a06-bf81-ea953ae02502/M_++Market+size.jpg"
-        b="eb9bbf6f-e083-475e-9253-8caaf0308ce9/V_+Business+model.jpg"
-      />
+      <ImgFull path="a72816ea-e3b5-4a3f-b526-b77f17acb4af/V_+Problem.jpg" />
 
       <ProjNav prev="Ola!" prevHref="/projects/ola" next="Dermat-AI" nextHref="/projects/dermat-ai" />
     </div>
