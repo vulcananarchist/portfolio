@@ -1,13 +1,13 @@
 import PageWrap from '@/components/PageWrap'
 
-export const metadata = { title: 'Contact — VK' }
+export const metadata = { title: 'Contact - VK' }
 
 export default function Contact() {
   return (
     <PageWrap>
       <h1 className="text-[1.3rem] font-medium mb-[0.4rem]">Get in touch</h1>
       <p className="text-[0.855rem] text-[rgba(240,240,240,0.62)] leading-[1.8] mb-[2rem]">
-        I'm always open to interesting conversations — whether that's a role, a project,
+        I'm always open to interesting conversations - whether that's a role, a project,
         or just something worth talking about.
       </p>
 
