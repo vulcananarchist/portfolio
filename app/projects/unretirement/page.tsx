@@ -56,7 +56,7 @@ export default function Unretirement() {
         />
       </div>
 
-      <ProjNav prev="Autonomous Drones" prevHref="/projects/drones" next="XPend" nextHref="/projects/xpend" />
+      <ProjNav prev="Dermat-AI" prevHref="/projects/dermat-ai" next="XPend" nextHref="/projects/xpend" />
     </div>
   )
 }
