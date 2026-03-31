@@ -1,6 +1,6 @@
 import { Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Ola! VK' }
+export const metadata = { title: 'Ola! — VK' }
 
 export default function Ola() {
   return (
@@ -15,8 +15,8 @@ export default function Ola() {
         <p>
           70% of Alzheimer's patients are women, yet cognitive screening is almost universally
           designed for elderly patients in clinical settings. Symptoms in middle-aged women are
-          dismissed as stress or menopause. Formal diagnosis comes 10 to 15 years after the first
-          signs appear.
+          dismissed as stress or menopause. Formal diagnosis comes 10 to 15 years after the
+          first signs appear. There is no product designed for the decade before the diagnosis.
         </p>
       </Blk>
 
@@ -24,37 +24,28 @@ export default function Ola() {
         ["70%","of Alzheimer's patients are women"],
         ["10-15yr","before formal diagnosis"],
         ["1st place","MIT AI Hackathon, 1,000+ teams"],
-        ["Passive","no clinic, no wearable"],
+        ["Passive","no clinic, no wearable needed"],
       ]} />
 
-      <Insight text="The best health screening tool is one that doesn't feel like a health screening tool it just works in the background of a life that's already full." />
+      <Insight text="The best health screening tool is one that doesn't feel like a health screening tool. It just works in the background of a life that's already full." />
 
-      <Blk label="The solution">
+      <Blk label="My approach">
         <p>
-          Ola! passively analyzes speech biomarkers during everyday phone calls pitch, tempo,
-          pauses, filler words, hesitations, vocal tone to detect early cognitive drift. No
-          active test. Just a call you were already going to make.
+          The core product decision was to make detection entirely passive. Ola! runs in the
+          background of normal phone calls, extracting six speech biomarkers correlated with
+          early cognitive change: speech rate, pitch variation, pause frequency, filler word
+          density, vocabulary richness, and tonal consistency.
         </p>
         <p>
-          Results surface as a weekly Cognitive Health Score with plain-language insights. Scores
-          are framed as <strong>trends, not diagnoses</strong>, reinforcing agency rather than anxiety.
+          The critical design constraint was this user is not a patient yet. She is a capable,
+          busy professional who is worried but not alarmed. Every interface decision reinforced
+          agency rather than anxiety. Scores are framed as <strong>trends, not diagnoses.</strong>{' '}
+          The weekly report appears and disappears. The product deliberately does not encourage
+          daily engagement — that would create exactly the anxiety spiral we were designing against.
         </p>
-      </Blk>
-
-      <Blk label="The user">
         <p>
-          Fiona, 45. Sharp, busy, juggling client meetings and school pickups. Forgetting names
-          mid-conversation, losing track of thoughts. Too busy to see a doctor, unsure if it's
-          worth worrying about. She wants <strong>clarity, not a clinic visit</strong>.
-        </p>
-      </Blk>
-
-      <Blk label="Business model">
-        <p>
-          Freemium B2C at $9.99/mo. B2B licensing to memory clinics ($5K to $15K/year), employer
-          wellness ($50 to $100/employee), SDK/API for digital health platforms ($25K/year + usage).
-          The B2B channel is the strategic priority employers already have distribution to exactly
-          this demographic.
+          Onboarding was reduced to one permission screen. The app explains what it listens for,
+          then disappears. The value is in the periodic report, not the app itself.
         </p>
       </Blk>
 
