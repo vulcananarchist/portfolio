@@ -9,7 +9,7 @@ const navLinks = [
   { href: '/experience', label: 'Experience', match: (p: string) => p.startsWith('/experience') },
   { href: '/projects', label: 'Projects', match: (p: string) => p.startsWith('/projects') },
   { href: '/writing', label: 'Writing', match: (p: string) => p.startsWith('/writing') },
-  { href: 'mailto:vkmurthy007@gmail.com', label: 'Contact', match: () => false },
+  { href: '/contact', label: 'Contact', match: (p: string) => p.startsWith('/contact') },
 ]
 
 export default function Header() {
@@ -29,17 +29,13 @@ export default function Header() {
         </Link>
         <nav className="flex items-center gap-4 sm:gap-6 flex-wrap">
           {navLinks.map(({ href, label, match }) => (
-            href.startsWith('mailto') ? (
-              <a key={label} href={href} className="nav-link">{label}</a>
-            ) : (
-              <Link
-                key={label}
-                href={href}
-                className={`nav-link ${match(path) ? 'nav-link-active' : ''}`}
-              >
-                {label}
-              </Link>
-            )
+            <Link
+              key={label}
+              href={href}
+              className={`nav-link ${match(path) ? 'nav-link-active' : ''}`}
+            >
+              {label}
+            </Link>
           ))}
         </nav>
       </div>
