@@ -7,7 +7,7 @@ export default function CerebroCare() {
     <div>
       <h1 className="text-[1.3rem] font-medium leading-[1.25] mb-[0.3rem]">CerebroCare</h1>
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
-        Healthcare · IoT Wearable · ML · Co-Founder
+        Healthcare · IoT Wearable · ML · Co-Founder · 2024 · 2024
       </p>
       <Tags items={['Product Strategy','Wearable UX','ML','Stakeholder Research','0 to 1']} />
 
