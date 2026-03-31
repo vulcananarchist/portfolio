@@ -60,7 +60,7 @@ body {
 
   /* 2-col image grid */
   .img-2 {
-    @apply grid grid-cols-2 gap-[0.5rem] my-[1.4rem];
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-[0.5rem] my-[1.4rem];
   }
   .img-2 img {
     @apply w-full block rounded-sm border border-white/[0.08];
