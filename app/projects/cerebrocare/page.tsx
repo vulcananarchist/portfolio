@@ -1,6 +1,6 @@
 import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'CerebroCare — VK' }
+export const metadata = { title: 'CerebroCare - VK' }
 
 export default function CerebroCare() {
   return (
@@ -39,7 +39,7 @@ export default function CerebroCare() {
           two weeks at home, and no one sees it coming.
         </p>
         <p>
-          The MVP was scoped tightly around adherence tracking and remote monitoring — not
+          The MVP was scoped tightly around adherence tracking and remote monitoring - not
           therapy delivery, which was a common trap. We built ML models to flag patients
           whose recovery was plateauing before it became visible to clinicians.
         </p>
@@ -47,7 +47,7 @@ export default function CerebroCare() {
           The wearable form factor was a deliberate product decision, not a technical one.
           A device worn daily becomes a physical reminder to do exercises. We chose{' '}
           <strong>psychological continuity over pure data collection.</strong> Every alert
-          was low-frequency by design — alert fatigue kills adherence faster than no alerts at all.
+          was low-frequency by design - alert fatigue kills adherence faster than no alerts at all.
           All UX was validated with patients who had limited smartphone familiarity.
         </p>
       </Blk>
