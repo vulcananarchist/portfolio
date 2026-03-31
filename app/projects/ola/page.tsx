@@ -1,6 +1,6 @@
 import { Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Ola! — VK' }
+export const metadata = { title: 'Ola! - VK' }
 
 export default function Ola() {
   return (
@@ -13,7 +13,7 @@ export default function Ola() {
 
       <img
         src="/ola-1.jpg"
-        alt="Ola! — voice AI app for early dementia detection"
+        alt="Ola! - voice AI app for early dementia detection"
         className="img-full"
         loading="lazy"
       />
@@ -48,7 +48,7 @@ export default function Ola() {
           capable, busy professional who is worried but not alarmed. Every interface decision
           reinforced agency rather than anxiety. Scores are framed as{' '}
           <strong>trends, not diagnoses.</strong> The weekly report appears and disappears.
-          The product deliberately does not encourage daily engagement — that would create
+          The product deliberately does not encourage daily engagement - that would create
           exactly the anxiety spiral we were designing against.
         </p>
         <p>
@@ -59,7 +59,7 @@ export default function Ola() {
 
       <img
         src="/ola-6.jpg"
-        alt="Ola! app — cognitive health summary screen"
+        alt="Ola! app - cognitive health summary screen"
         className="img-full"
         loading="lazy"
       />
