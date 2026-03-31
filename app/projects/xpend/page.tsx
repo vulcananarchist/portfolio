@@ -1,6 +1,6 @@
 import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'XPend — VK' }
+export const metadata = { title: 'XPend - VK' }
 
 export default function Xpend() {
   return (
@@ -16,8 +16,8 @@ export default function Xpend() {
       <Blk label="The problem">
         <p>
           Most personal finance apps assume people overspend because they lack information.
-          The research consistently shows otherwise. Impulsive spending is emotional — triggered
-          by stress, boredom, social comparison — and happens in moments when no one is
+          The research consistently shows otherwise. Impulsive spending is emotional - triggered
+          by stress, boredom, social comparison - and happens in moments when no one is
           opening a budgeting app. Showing someone where their money went, after the fact,
           does not change the decision that was already made.
         </p>
@@ -41,7 +41,7 @@ export default function Xpend() {
         </p>
         <p>
           The design was built backwards from the emotional state users are actually in when
-          they overspend — not the state they're in when they open a budgeting app with good
+          they overspend - not the state they're in when they open a budgeting app with good
           intentions. That meant the interface had to be frictionless, non-judgmental, and
           capable of a single useful interaction in under 30 seconds. Every feature that
           required more than that was cut.
