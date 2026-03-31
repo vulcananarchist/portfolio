@@ -37,44 +37,27 @@ export default function ProjectsLayout({ children }: { children: React.ReactNode
         <Header />
       </div>
 
-      {/* Body */}
-      <motion.div
-        className="mx-auto px-6"
-        animate={{ maxWidth: isOpen ? '1100px' : '1100px' }}
-        transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
-      >
-        <div className="flex items-start">
-
+      {isOpen ? (
+        /* ── SPLIT VIEW ── */
+        <div className="max-w-[1100px] mx-auto px-6 flex gap-0">
           {/* Sidebar */}
           <motion.aside
             className="flex-shrink-0 overflow-hidden"
             animate={{ width: isOpen ? 210 : 0, opacity: isOpen ? 1 : 0 }}
             transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
           >
-            <div className="sticky top-8 w-[210px] pr-0">
-              <div className="text-[0.62rem] font-medium uppercase tracking-[0.14em] text-muted mb-4">
-                Projects
-              </div>
+            <div className="sticky top-8 w-[210px]">
+              <div className="text-[0.62rem] font-medium uppercase tracking-[0.14em] text-muted mb-4">Projects</div>
               <nav className="flex flex-col">
                 {projects.map(p => {
                   const active = path === `/projects/${p.slug}` || path === `/projects/${p.slug}/`
                   return (
-                    <Link
-                      key={p.slug}
-                      href={`/projects/${p.slug}`}
-                      className={`flex flex-col py-[0.65rem] border-t border-white/[0.08] last:border-b no-underline transition-opacity duration-200 ${
-                        active ? 'opacity-100' : 'opacity-40 hover:opacity-75'
-                      }`}
+                    <Link key={p.slug} href={`/projects/${p.slug}`}
+                      className={`flex flex-col py-[0.65rem] border-t border-white/[0.08] last:border-b no-underline transition-opacity duration-200 ${active ? 'opacity-100' : 'opacity-40 hover:opacity-75'}`}
                     >
                       <span className="text-[0.8rem] font-medium text-tx">{p.name}</span>
                       <span className="text-[0.67rem] text-muted mt-[0.1rem]">{p.tags.join(' · ')}</span>
-                      {active && (
-                        <motion.span
-                          layoutId="activeBar"
-                          className="block h-px bg-acc mt-[0.4rem]"
-                          style={{ width: 16 }}
-                        />
-                      )}
+                      {active && <motion.span layoutId="activeBar" className="block h-px bg-acc mt-[0.4rem]" style={{ width: 16 }} />}
                     </Link>
                   )
                 })}
@@ -85,33 +68,34 @@ export default function ProjectsLayout({ children }: { children: React.ReactNode
           {/* Divider */}
           <motion.div
             className="self-stretch flex-shrink-0"
-            animate={{
-              width: isOpen ? 1 : 0,
-              marginLeft: isOpen ? 40 : 0,
-              marginRight: isOpen ? 40 : 0,
-              opacity: isOpen ? 1 : 0,
-            }}
+            animate={{ width: 1, marginLeft: 40, marginRight: 40, opacity: 1 }}
             transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
             style={{ background: 'rgba(255,255,255,0.08)' }}
           />
 
-          {/* Content — fades between projects */}
-          <main className="flex-1 min-w-0 pb-16 overflow-hidden">
+          {/* Content */}
+          <main className="flex-1 min-w-0 pb-16">
             <AnimatePresence mode="wait">
-              <motion.div
-                key={key}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -6 }}
-                transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
-              >
+              <motion.div key={key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}>
                 {children}
               </motion.div>
             </AnimatePresence>
           </main>
-
         </div>
-      </motion.div>
+      ) : (
+        /* ── LIST VIEW — left-aligned, same position as rest of site ── */
+        <div className="max-w-[1100px] mx-auto px-6">
+          <div className="max-w-[560px]">
+            <main className="pb-16">
+              <AnimatePresence mode="wait">
+                <motion.div key={key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}>
+                  {children}
+                </motion.div>
+              </AnimatePresence>
+            </main>
+          </div>
+        </div>
+      )}
 
       {/* Footer */}
       <div className="max-w-[1100px] mx-auto px-6">
