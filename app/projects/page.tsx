@@ -6,7 +6,6 @@ const projects = [
   { slug: 'ola',          name: 'Ola!',              desc: 'Voice AI app for early dementia detection in women - MIT AI Hackathon winner',              tags: ['Voice AI', "Women's Health", 'Cognitive Health'] },
   { slug: 'cerebrocare',  name: 'CerebroCare',        desc: 'Integrated stroke recovery system with AI-driven monitoring and personalised therapy',      tags: ['Healthcare', 'IoT', 'ML', 'Wearables'] },
   { slug: 'dermat-ai',    name: 'Dermat-AI',          desc: 'Longitudinal AI dermatology assessment - equitable diagnosis for underserved communities',  tags: ['Healthcare', 'AI/ML', 'Product Strategy'] },
-  { slug: 'drones',       name: 'Autonomous Drones',  desc: 'Indoor GPS-denied navigation - 98.2% accuracy (DRDO)',                                      tags: ['ML', 'IoT', 'Autonomous Systems'] },
   { slug: 'unretirement', name: 'Unretirement',       desc: 'Data analysis and user research on why retired individuals return to work',                  tags: ['Data Analysis', 'User Research', 'Product Design'] },
   { slug: 'xpend',        name: 'XPend',              desc: 'AI finance app - smart expense tracking and behavioural budgeting nudges',                   tags: ['Fintech', 'AI', 'Product Management'] },
   { slug: 'storesmart',   name: 'StoreSmart',         desc: 'IoT and ML cold storage optimisation to reduce post-harvest food loss - Indian Patent',     tags: ['AgTech', 'IoT', 'ML'] },
