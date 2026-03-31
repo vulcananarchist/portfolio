@@ -37,7 +37,7 @@ export default function Writing() {
         <p className="text-[0.855rem] text-[rgba(240,240,240,0.62)] leading-[1.85] mb-3">
           Most health tech discourse is either breathlessly optimistic or reflexively sceptical.
           This newsletter tries to be neither. It's about what's actually happening at the
-          intersection of AI and healthcare — the decisions being made, the trade-offs being
+          intersection of AI and healthcare - the decisions being made, the trade-offs being
           ignored, and what people building in this space genuinely need to know.
         </p>
         <p className="text-[0.855rem] text-[rgba(240,240,240,0.62)] leading-[1.85]">
