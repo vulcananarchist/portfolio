@@ -7,7 +7,7 @@ export default function Xpend() {
     <div>
       <h1 className="text-[1.3rem] font-medium leading-[1.25] mb-[0.3rem]">XPend</h1>
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
-        Fintech · Behavioural AI · Product Design · Harvard
+        Fintech · Behavioural AI · Product Design · Harvard · 2024
       </p>
       <Tags items={['Behavioural Design','Conversational AI','Mobile UX','Consumer Psychology','Point-of-spend']} />
 
