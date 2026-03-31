@@ -1,13 +1,13 @@
-import { ImgFull, Img2, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
+import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Autonomous Drones VK' }
+export const metadata = { title: 'Autonomous Drones — VK' }
 
 export default function Drones() {
   return (
     <div>
       <h1 className="text-[1.3rem] font-medium leading-[1.25] mb-[0.3rem]">Autonomous Drones</h1>
       <p className="text-[0.7rem] text-acc uppercase tracking-[0.1em] mb-[1.2rem] opacity-75">
-        ML · IoT · Autonomous Systems · DRDO
+        ML · Embedded Systems · Autonomous Navigation · DRDO
       </p>
       <Tags items={['Computer Vision','Sensor Fusion','Embedded ML','Real-time Inference','Defence Research']} />
 
@@ -15,32 +15,34 @@ export default function Drones() {
 
       <Blk label="The problem">
         <p>
-          GPS fails in tunnels, dense urban environments, and contested zones exactly where
-          autonomous navigation matters most. Built at DRDO's Center for AI and Robotics, this
-          system achieves reliable navigation with no external positioning signal.
+          GPS fails in tunnels, dense urban environments, and electronic warfare zones — exactly
+          where autonomous navigation matters most. India's defence systems needed drones that
+          could operate without any external positioning signal, in real time, on embedded hardware
+          with strict power constraints.
         </p>
       </Blk>
 
       <Stats items={[
-        ["98.2%","accuracy, GPS-denied"],
-        ["87%","reliability improvement"],
-        ["On-device","all inference"],
-        ["DRDO","India's premier defence lab"],
+        ["98.2%","navigation accuracy, GPS-denied"],
+        ["87%","improvement in production reliability"],
+        ["On-device","all inference, no cloud dependency"],
+        ["DRDO","India's premier defence research lab"],
       ]} />
 
-      <Insight text="Designing for constraint is designing for trust a system that degrades gracefully in the hardest conditions is more valuable than one that performs perfectly in ideal ones." />
+      <Insight text="Designing for constraint is designing for trust. A system that degrades gracefully under the hardest conditions is worth more than one that performs perfectly in ideal ones." />
 
-      <Img2
-        a="42fd3014-5b93-48f5-b4c2-66c74607dc5c/12.png"
-        b="ce9edb21-abdc-466a-8876-51b39efa039d/13.png"
-      />
-
-      <Blk label="What I built">
+      <Blk label="My approach">
         <p>
-          Combined computer vision, inertial sensing, and on-device ML inference to build a live
-          environment map and plan paths in real time, all within the power and compute constraints
-          of embedded hardware. Every design decision was governed by one constraint: the system
-          must work when nothing else does.
+          The system combined computer vision, inertial sensing, and on-device ML inference to
+          build a live environment map and plan paths in real time. The architectural principle
+          was <strong>graceful degradation</strong>: every subsystem was designed with a defined
+          failure mode that left the drone in a safer state rather than an unpredictable one.
+        </p>
+        <p>
+          Every design decision was governed by the embedded constraint. Model architecture choices
+          were made based on inference latency and power draw, not just accuracy benchmarks.
+          A model that is 2% more accurate but misses its latency window is a worse system.
+          The 98.2% figure was achieved within those real-world constraints, not in a controlled lab.
         </p>
       </Blk>
 
