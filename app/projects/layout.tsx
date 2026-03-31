@@ -9,7 +9,7 @@ import Footer from '@/components/Footer'
 const projects = [
   { slug: 'ola',          name: 'Ola!',              tags: ['Voice AI', "Women's Health"] },
   { slug: 'cerebrocare',  name: 'CerebroCare',        tags: ['Healthcare', 'IoT'] },
-  { slug: 'dermat-ai',    name: 'Dermat-AI',          tags: ['Healthcare', 'AI/ML'] },
+  { slug: 'dermat-ai',    name: 'Equiderm',          tags: ['Healthcare', 'AI/ML'] },
   { slug: 'unretirement', name: 'Unretirement',       tags: ['User Research'] },
   { slug: 'xpend',        name: 'XPend',              tags: ['Fintech', 'AI'] },
   { slug: 'storesmart',   name: 'StoreSmart',         tags: ['AgTech', 'IoT'] },
