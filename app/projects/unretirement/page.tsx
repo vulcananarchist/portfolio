@@ -1,6 +1,6 @@
 import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Unretirement — VK' }
+export const metadata = { title: 'Unretirement - VK' }
 
 export default function Unretirement() {
   return (
@@ -16,7 +16,7 @@ export default function Unretirement() {
       <Blk label="The problem">
         <p>
           Between 2020 and 2023, the number of Americans returning to work after retirement
-          grew significantly — driven by meaning and identity as much as economic pressure.
+          grew significantly - driven by meaning and identity as much as economic pressure.
           Yet every major employment platform treats them identically to a 28-year-old first
           job-seeker. The friction is designed in.
         </p>
