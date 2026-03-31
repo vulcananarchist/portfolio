@@ -1,6 +1,6 @@
 import { ImgFull, Insight, Stats, Tags, ProjNav, Blk } from '@/components/ProjectParts'
 
-export const metadata = { title: 'Dermat-AI - VK' }
+export const metadata = { title: 'Dermat-AI — VK' }
 
 export default function DermatAI() {
   return (
@@ -11,7 +11,7 @@ export default function DermatAI() {
       </p>
       <Tags items={['Diagnostic AI','Algorithmic Bias','Clinical UX','Computer Vision','Health Equity']} />
 
-      <ImgFull path="c780cf3c-a1ab-4d39-9196-60abb6ec2e3a/Copy+of+Copy+of+Purple+Gradient+Entertainment+Application+Presentation.png" />
+      <ImgFull path="51353ec4-b427-4383-9e40-9bfaf8b0567a/4.png" />
 
       <Blk label="The problem">
         <p>
@@ -53,9 +53,9 @@ export default function DermatAI() {
         </p>
       </Blk>
 
-      <ImgFull path="51353ec4-b427-4383-9e40-9bfaf8b0567a/4.png" />
+      <ImgFull path="41798f3b-8cc4-4a99-a9f1-f681a6780d88/6.png" />
 
-      <ProjNav prev="CerebroCare" prevHref="/projects/cerebrocare" next="Autonomous Drones" nextHref="/projects/drones" />
+      <ProjNav prev="CerebroCare" prevHref="/projects/cerebrocare" next="Unretirement" nextHref="/projects/unretirement" />
     </div>
   )
 }
