@@ -32,7 +32,7 @@ export default function ProjectsLayout({ children }: { children: React.ReactNode
 
   return (
     <div className="min-h-screen">
-      {/* Header — always wide on desktop, full width on mobile */}
+      {/* Header - always wide on desktop, full width on mobile */}
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         <Header />
       </div>
@@ -42,7 +42,7 @@ export default function ProjectsLayout({ children }: { children: React.ReactNode
         <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
           <div className="flex gap-0">
 
-            {/* Sidebar — hidden on mobile */}
+            {/* Sidebar - hidden on mobile */}
             <motion.aside
               className="hidden sm:block flex-shrink-0 overflow-hidden"
               animate={{ width: 210, opacity: 1 }}
@@ -68,7 +68,7 @@ export default function ProjectsLayout({ children }: { children: React.ReactNode
               </div>
             </motion.aside>
 
-            {/* Divider — hidden on mobile */}
+            {/* Divider - hidden on mobile */}
             <div className="hidden sm:block w-px bg-white/[0.08] mx-10 self-stretch" />
 
             {/* Content */}
