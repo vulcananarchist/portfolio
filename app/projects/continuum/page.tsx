@@ -11,14 +11,14 @@ export default function Continuum() {
         Care Orchestration Intelligence · Uber Health · 2025
       </p>
       <p className="text-[0.7rem] text-muted mb-[1.2rem]">
-        Built with AI -{' '}
-        <a href="https://continuum-one-tau.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-acc hover:opacity-75 transition-opacity">
+        Built with AI ·{' '}
+        <a href="https://continuum-one-tau.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-acc hover:opacity-80 transition-opacity">
           continuum-one-tau.vercel.app ↗
         </a>
       </p>
       <Tags items={['Agentic AI','SDOH','Uber Health','HIPAA Architecture','Claude API']} />
 
-      <img src="/continuum-hero.jpg" alt="Continuum — patient journey map with cascade simulation" className="img-full" loading="lazy" />
+      <img src="/continuum-hero.png" alt="Continuum — Journey Map with AI arrival probability and signal history" className="img-full" loading="lazy" />
 
       <Blk label="The problem">
         <p>
@@ -39,39 +39,33 @@ export default function Continuum() {
 
       <Insight text="Transportation is not a logistics layer. It is a social determinant. The question was what a system looks like that closes the loop between behavioural data and care team action." />
 
-      <img src="/continuum-cascade.jpg" alt="Continuum — Claude-powered cascade simulation showing downstream clinical risk" className="img-full" loading="lazy" />
+      <img src="/continuum-cascade.png" alt="Continuum — Claude-powered cascade simulation showing downstream clinical and cost impact" className="img-full" loading="lazy" />
 
-      <Blk label="My approach">
+      <Blk label="How it works">
         <p>
           The data model is built around real SDOH signal types: booking lead time trend,
           cancellation frequency, reschedule patterns, and no-show history. A Claude-powered
           cascade simulator quantifies the downstream cost of inaction - missed dialysis
-          sessions convert to hospitalisations, which convert to cost. The screenshot above
-          shows M.R., a dialysis patient at 82 CRITICAL risk: if she misses her Wednesday
-          session, the model projects a 45% readmission risk within 14 days at 9k estimated
-          system cost.
+          sessions convert directly to hospitalisations, which convert directly to cost.
         </p>
         <p>
           All AI interventions are constrained to what Uber Health can actually do:{' '}
           <strong>ride pre-booking, fare waivers, SMS nudges, recurring schedules.</strong>{' '}
-          Every recommendation requires human confirmation before execution. The audit trail
-          surfaces who acted on what, and when.
+          Every AI-generated recommendation requires human confirmation before execution.
+          A live audit trail surfaces who acted on what, and when.
         </p>
       </Blk>
-
-      <img src="/continuum-journey.jpg" alt="Continuum — T.K. oncology patient journey with 54% arrival probability" className="img-full" loading="lazy" />
 
       <Blk label="Three views">
         <p>
           <strong>Patient Journey Map</strong> - individual-level AI arrival probability,
-          care timeline, signal history, cascade simulation, and intervention console.
-          T.K. above is an oncology patient at 54% arrival probability after two missed
-          infusions in 30 days - caregiver confirmation rate collapsed from 90% to 25%.
+          cascade simulation showing downstream clinical and cost impact, and intervention
+          recommendations within Uber Health's toolkit.
         </p>
         <p>
           <strong>Care Desert Intelligence</strong> - geographic population-level failure
-          pattern analysis identifying where transportation barriers systematically drive
-          care continuity failure.
+          pattern analysis identifying where transportation barriers are systematically
+          driving care continuity failure.
         </p>
         <p>
           <strong>Health Passport API Explorer</strong> - demonstrates the SDOH data product
@@ -82,7 +76,7 @@ export default function Continuum() {
 
       <div className="pt-5 border-t border-white/[0.08] mt-10">
         <Link href="/projects" className="text-[0.8rem] text-muted no-underline hover:text-acc transition-colors">
-          ← All projects
+          Back to projects
         </Link>
       </div>
     </div>
