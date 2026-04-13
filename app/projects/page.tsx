@@ -1,6 +1,6 @@
+'use client'
+import { useState } from 'react'
 import Link from 'next/link'
-
-export const metadata = { title: 'Projects - VK' }
 
 const projects = [
   { slug: 'ola',          name: 'Ola!',        desc: 'Voice AI app for early dementia detection in women - MIT AI Hackathon',               tags: ['Voice AI', "Women's Health", 'Cognitive Health'] },
@@ -16,17 +16,43 @@ const aiProjects = [
   {
     slug: 'continuum',
     name: 'Continuum',
-    desc: 'Care orchestration intelligence — Uber Health ride data as predictive clinical risk signals',
+    desc: 'Care orchestration intelligence - Uber Health ride data as predictive clinical risk signals',
     tags: ['Agentic AI', 'SDOH', 'Uber Health', 'Claude API'],
-    href: '/projects/continuum',
+    live: true,
   },
 ]
 
 export default function Projects() {
+  const [tab, setTab] = useState<'projects' | 'ai'>('projects')
+
   return (
     <div>
-      <section className="mb-[3rem]">
-        <h2 className="text-[0.68rem] font-medium uppercase tracking-[0.12em] text-muted mb-[1.2rem]">Selected Projects</h2>
+      {/* Tabs */}
+      <div className="flex gap-0 mb-8 border-b border-white/[0.08]">
+        <button
+          onClick={() => setTab('projects')}
+          className={`text-[0.78rem] pb-[0.65rem] pr-5 border-b-[1.5px] transition-colors duration-150 ${
+            tab === 'projects'
+              ? 'border-acc text-tx font-medium'
+              : 'border-transparent text-muted hover:text-tx'
+          }`}
+        >
+          Selected Projects
+        </button>
+        <button
+          onClick={() => setTab('ai')}
+          className={`text-[0.78rem] pb-[0.65rem] px-5 border-b-[1.5px] transition-colors duration-150 ${
+            tab === 'ai'
+              ? 'border-acc text-tx font-medium'
+              : 'border-transparent text-muted hover:text-tx'
+          }`}
+        >
+          Built with AI
+        </button>
+      </div>
+
+      {/* Selected Projects */}
+      {tab === 'projects' && (
         <div>
           {projects.map(p => (
             <Link key={p.slug} href={`/projects/${p.slug}`} className="project-item block group">
@@ -43,21 +69,25 @@ export default function Projects() {
             </Link>
           ))}
         </div>
-      </section>
+      )}
 
-      <section>
-        <h2 className="text-[0.68rem] font-medium uppercase tracking-[0.12em] text-muted mb-[0.4rem]">Built with AI</h2>
-        <p className="text-[0.75rem] text-muted mb-[1.2rem] leading-[1.6]">
-          Products I designed and built end-to-end using AI as a collaborator.
-        </p>
+      {/* Built with AI */}
+      {tab === 'ai' && (
         <div>
+          <p className="text-[0.78rem] text-muted mb-5 leading-[1.7]">
+            Products designed and built end-to-end using AI as a collaborator.
+          </p>
           {aiProjects.map(p => (
-            <Link key={p.slug} href={p.href} className="project-item block group">
+            <Link key={p.slug} href={`/projects/${p.slug}`} className="project-item block group">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <div className="flex items-center gap-2">
                     <div className="text-[0.875rem] font-medium transition-colors duration-150 group-hover:text-acc">{p.name}</div>
-                    <span className="text-[0.6rem] font-medium uppercase tracking-[0.1em] text-acc border border-acc/30 px-[0.4rem] py-[0.1rem] rounded-sm">Live</span>
+                    {p.live && (
+                      <span className="text-[0.6rem] font-medium uppercase tracking-[0.1em] text-acc border border-acc/30 px-[0.4rem] py-[0.1rem] rounded-sm">
+                        Live
+                      </span>
+                    )}
                   </div>
                   <div className="text-[0.78rem] text-muted mt-[0.1rem] leading-[1.55]">{p.desc}</div>
                   <div className="flex flex-wrap gap-[0.3rem] mt-[0.4rem]">
@@ -69,7 +99,7 @@ export default function Projects() {
             </Link>
           ))}
         </div>
-      </section>
+      )}
     </div>
   )
 }
