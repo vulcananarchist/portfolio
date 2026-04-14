@@ -15,6 +15,17 @@ export default function Continuum() {
       </p>
       <Tags items={['Agentic AI','SDOH','Uber Health','HIPAA Architecture','Claude API']} />
 
+      <div className="mb-[1.8rem]">
+        <a
+          href="https://continuum-one-tau.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-[0.78rem] text-acc no-underline border border-acc/30 px-4 py-[0.45rem] rounded-sm hover:border-acc hover:bg-acc/5 transition-colors"
+        >
+          View demo ↗
+        </a>
+      </div>
+
       <Blk label="The problem">
         <p>
           Missed appointments in complex-care populations - dialysis, oncology, post-discharge -
