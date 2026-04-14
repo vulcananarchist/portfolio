@@ -11,14 +11,9 @@ export default function Continuum() {
         Care Orchestration Intelligence · Uber Health · 2025
       </p>
       <p className="text-[0.7rem] text-muted mb-[1.2rem]">
-        Built with AI ·{' '}
-        <a href="https://continuum-one-tau.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-acc hover:opacity-80 transition-opacity">
-          continuum-one-tau.vercel.app ↗
-        </a>
+        Built with AI
       </p>
       <Tags items={['Agentic AI','SDOH','Uber Health','HIPAA Architecture','Claude API']} />
-
-      <img src="/continuum-hero.png" alt="Continuum — Journey Map with AI arrival probability and signal history" className="img-full" loading="lazy" />
 
       <Blk label="The problem">
         <p>
@@ -39,8 +34,6 @@ export default function Continuum() {
 
       <Insight text="Transportation is not a logistics layer. It is a social determinant. The question was what a system looks like that closes the loop between behavioural data and care team action." />
 
-      <img src="/continuum-cascade.png" alt="Continuum — Claude-powered cascade simulation showing downstream clinical and cost impact" className="img-full" loading="lazy" />
-
       <Blk label="How it works">
         <p>
           The data model is built around real SDOH signal types: booking lead time trend,
@@ -60,7 +53,7 @@ export default function Continuum() {
         <p>
           <strong>Patient Journey Map</strong> - individual-level AI arrival probability,
           cascade simulation showing downstream clinical and cost impact, and intervention
-          recommendations within Uber Health's toolkit.
+          recommendations within Uber Health toolkit.
         </p>
         <p>
           <strong>Care Desert Intelligence</strong> - geographic population-level failure
