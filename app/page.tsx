@@ -27,7 +27,7 @@ export default function Home() {
         <p className="body-p">
           I'm an AI product manager and engineer who builds at the intersection of
           healthcare and technology. I've founded a healthcare AI company, led AI product
-          teams at Harvard and early-stage startups, and spent 4+ years getting ideas
+          teams at Harvard and early-stage startups, and spent 5+ years getting ideas
           from zero to one.
         </p>
         <p className="body-p">
